@@ -1,0 +1,15 @@
+<h2><mat-icon>book</mat-icon> Livros Cadastrados:</h2>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Autor</th>
+  </tr>
+
+  <tr *ngFor='let livro of livros'>
+    <th>{{livro.id}}</th>
+    <th>{{livro.nome}</th>
+    <th>{{livro.autor}}</th>
+  </tr>
+</table>
