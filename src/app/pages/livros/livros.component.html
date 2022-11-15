@@ -4,10 +4,11 @@
     <thead class="table-primary">
       <tr>
         <th>Id</th>
-        <th>Nome</th>
+        <th style="width: 40%;">Nome</th>
         <th>Autor</th>
         <th>Páginas</th>
         <th>Área</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,10 @@
         <th>{{livro.autor}}</th>
         <th>{{livro.numeroDePaginas}}</th>
         <th>{{livro.areaDeConhecimento}}</th>
+        <th class="botoes">
+          <button type="button" class="btn btn-outline-warning btn-sm">Editar</button>
+          <button type="button" class="btn btn-outline-danger btn-sm">Excluir</button>
+        </th>
       </tr>
     </tbody>
   </table>

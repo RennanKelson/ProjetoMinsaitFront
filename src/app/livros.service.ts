@@ -19,6 +19,8 @@ export class LivrosService {
     return this.http.get<ILivroModel[]>(this.urlApi);
   }
 
+  
+
   cadastroLivros(livro : ILivroModel) {
     return this.http.post(this.urlApi, livro)
   }
