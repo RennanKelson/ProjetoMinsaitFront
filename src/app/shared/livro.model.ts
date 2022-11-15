@@ -1,5 +1,5 @@
 export interface ILivroModel {
-    id: number,
+    id?: number,
     titulo: string,
     autor: string,
     numeroDePaginas: string,
