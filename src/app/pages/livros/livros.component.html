@@ -1,21 +1,26 @@
 <div class="container mt-3">
   <h3>Livros Cadastrados:</h3>
-  <table class="table mt-4">
-    <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>Autor</th>
-      <th>Páginas</th>
-      <th>Área</th>
-    </tr>
-
-    <tr *ngFor='let livro of livros'>
-      <th>{{livro.id}}</th>
-      <th>{{livro.titulo}}</th>
-      <th>{{livro.autor}}</th>
-      <th>{{livro.numeroDePaginas}}</th>
-      <th>{{livro.areaDeConhecimento}}</th>
-    </tr>
+  <table class="table table-striped table-hover mt-4">
+    <thead class="table-primary">
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Autor</th>
+        <th>Páginas</th>
+        <th>Área</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let livro of livros'>
+        <th>{{livro.id}}</th>
+        <th>{{livro.titulo}}</th>
+        <th>{{livro.autor}}</th>
+        <th>{{livro.numeroDePaginas}}</th>
+        <th>{{livro.areaDeConhecimento}}</th>
+      </tr>
+    </tbody>
   </table>
-  <a class="btn btn-primary mt-4" routerLink="cadastro">+ Novo Livro</a>
+  <div class="acao">
+    <a class="btn btn-primary mt-4" routerLink="cadastro">+ Novo Livro</a>
+  </div>
 </div>
