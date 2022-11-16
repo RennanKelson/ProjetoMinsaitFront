@@ -1,5 +1,5 @@
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { LivrosService } from './../../../livros.service';
+import { LivrosService } from '../../../services/livros.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -40,7 +40,4 @@ export class CadastroComponent implements OnInit {
       alert ("Preencha os campos obrigatórios!");
     }
   }
-
-
-
 }

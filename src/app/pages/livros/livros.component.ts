@@ -1,5 +1,5 @@
 import { ILivroModel } from '../../shared/models/livro.model';
-import { LivrosService } from '../../livros.service';
+import { LivrosService } from '../../services/livros.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
