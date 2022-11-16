@@ -19,6 +19,10 @@ export class LivrosService {
     return this.http.get<ILivroModel[]>(this.urlApi);
   }
 
+  listarLivrosID(id: number) : Observable <ILivroModel[]> {
+    return this.http.get<ILivroModel[]>(`${this.urlApi}/${id}`);
+  }
+
   removerLivros(id: number){
     return this.http.delete(`${this.urlApi}/${id}`).subscribe((result)=> {
       console.log(result)
@@ -27,5 +31,9 @@ export class LivrosService {
 
   cadastroLivros(livro : ILivroModel) {
     return this.http.post(this.urlApi, livro)
+  }
+
+  editarLivros(livro : ILivroModel) {
+    return this.http.put(this.urlApi, livro)
   }
 }

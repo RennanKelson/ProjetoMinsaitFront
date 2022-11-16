@@ -17,7 +17,7 @@
         <th>{{livro.numeroDePaginas}}</th>
         <th>{{livro.areaDeConhecimento}}</th>
         <th class="botoes">
-          <button type="button" class="btn btn-outline-warning btn-sm">Editar</button>
+          <button type="button" class="btn btn-outline-warning btn-sm" routerLink="editar/{{livro.id}}">Editar</button>
           <button type="button" class="btn btn-outline-danger btn-sm" (click)="excluirLivro(livro.id)">Excluir</button>
         </th>
       </tr>
