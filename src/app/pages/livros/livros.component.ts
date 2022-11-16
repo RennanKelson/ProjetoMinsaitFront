@@ -1,4 +1,4 @@
-import { ILivroModel } from '../../shared/livro.model';
+import { ILivroModel } from '../../shared/models/livro.model';
 import { LivrosService } from '../../livros.service';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -26,4 +26,9 @@ export class LivrosComponent implements OnInit {
     })
   }
 
+  excluirLivro (id : number) {
+    console.log(id);
+    this.livrosService.removerLivros(id);
+    this.listarLivros();
+  }
 }

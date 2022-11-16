@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { environment } from './../environments/environment';
-import { ILivroModel } from './shared/livro.model';
+import { ILivroModel } from './shared/models/livro.model';
 
 
 @Injectable({
@@ -19,7 +19,11 @@ export class LivrosService {
     return this.http.get<ILivroModel[]>(this.urlApi);
   }
 
-  
+  removerLivros(id: number){
+    return this.http.delete(`${this.urlApi}/${id}`).subscribe((result)=> {
+      console.log(result)
+    });
+  }
 
   cadastroLivros(livro : ILivroModel) {
     return this.http.post(this.urlApi, livro)

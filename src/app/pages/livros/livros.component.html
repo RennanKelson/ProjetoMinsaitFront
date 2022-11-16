@@ -3,7 +3,6 @@
   <table class="table table-striped table-hover mt-4">
     <thead class="table-primary">
       <tr>
-        <th>Id</th>
         <th style="width: 40%;">Nome</th>
         <th>Autor</th>
         <th>Páginas</th>
@@ -13,14 +12,13 @@
     </thead>
     <tbody>
       <tr *ngFor='let livro of livros'>
-        <th>{{livro.id}}</th>
         <th>{{livro.titulo}}</th>
         <th>{{livro.autor}}</th>
         <th>{{livro.numeroDePaginas}}</th>
         <th>{{livro.areaDeConhecimento}}</th>
         <th class="botoes">
           <button type="button" class="btn btn-outline-warning btn-sm">Editar</button>
-          <button type="button" class="btn btn-outline-danger btn-sm">Excluir</button>
+          <button type="button" class="btn btn-outline-danger btn-sm" (click)="excluirLivro(livro.id)">Excluir</button>
         </th>
       </tr>
     </tbody>
