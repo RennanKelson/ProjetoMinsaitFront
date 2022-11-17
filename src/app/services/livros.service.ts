@@ -19,8 +19,8 @@ export class LivrosService {
     return this.http.get<ILivroModel[]>(this.urlApi);
   }
 
-  listarLivrosID(id: number) : Observable <ILivroModel[]> {
-    return this.http.get<ILivroModel[]>(`${this.urlApi}/${id}`);
+  listarLivrosID(id: number) : Observable <ILivroModel> {
+    return this.http.get<ILivroModel>(`${this.urlApi}/${id}`);
   }
 
   removerLivros(id: number){
@@ -33,7 +33,7 @@ export class LivrosService {
     return this.http.post(this.urlApi, livro)
   }
 
-  editarLivros(livro : ILivroModel) {
-    return this.http.put(this.urlApi, livro)
+  editarLivros(id : number, livro: ILivroModel) {
+    return this.http.put(`${this.urlApi}/${id}`, livro)
   }
 }
