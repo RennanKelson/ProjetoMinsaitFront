@@ -2,14 +2,14 @@
 <form [formGroup]="formEdit" (ngSubmit)="editarLivro()">
   <div class="container mt-5">
 
-    <h4>Cadastrar Livro:</h4>
+    <h4>Editar Livro:</h4>
 
     <div class="form-group mt-4">
       <label for="id">Id</label>
       <input type="text" class="form-control" name="id" id="id" required formControlName="id">
     </div>
 
-    <div class="form-group mt-4">
+    <div class="form-group">
       <label for="titulo">Título</label>
       <input type="text" class="form-control" name="titulo" id="titulo" required formControlName="titulo">
     </div>

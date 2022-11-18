@@ -1,27 +1,18 @@
-# Projetominsaitfront
+<h1>ProjetoMinsaitAcervos</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+## Projeto destinado ao curso de .net e angular da empresa Minsait. Professor: Raffael Martins
 
-## Development server
+<h3>🎯 Objetivo</h3>
+Criar um projeto frontend em Angular que consuma uma CRUD.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h3>🧱 O que foi feito?</h3>
+A crud utilizada para atender o objetivo foi a do repositório: https://github.com/RennanKelson/ProjetoMinsaitAcervo
 
-## Code scaffolding
+OBS: Com o ng serve em execução, utilizar a porta de acesso no browser http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+E foram construidas três telas para que atendesse o objetivo do projeto.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Vizualização das telas criadas:
+![cadastro](https://user-images.githubusercontent.com/96076786/202775913-718fb0a4-3480-4ea3-b988-fd85599dae1f.JPG)
+![Editar](https://user-images.githubusercontent.com/96076786/202775917-523cd1eb-f6d3-48d0-a676-08c250261daa.JPG)
+![home](https://user-images.githubusercontent.com/96076786/202775920-12cb7854-a220-42ed-8c38-ac3ecc86a0cd.JPG)
